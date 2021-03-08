@@ -10,11 +10,11 @@ The app grew out of my personal experience having to learn English vocabulary as
 
 Each word entry is a dictionary with keys "word", "definition", and "weight". 
 
-The application does weighted random selection of words. Each time the user states they know the word, the weight of the word is reduced and it becomes less likely to be recommended in subsequent sessions. The learning sessions are saved as "in progress" lists so that the original vocabulary lists aren't changed and can be reused in the future. If the weight of the word drops down to 0, the word is removed from the list. Once all words are dropped from an " in progress" session list and the list becomes empty, the subsequent session will use the original vocabulary list. 
+The application does weighted random selection of words. Each time the user states they know the word, the weight of the word is reduced and it becomes less likely to be recommended in subsequent sessions. The learning sessions are saved as "in progress" lists so that the original vocabulary lists aren't changed and can be reused in the future. If the weight of the word drops down to 0, the word is removed from the list. Once all words are dropped from an " in progress" session list and the list becomes empty, the subsequent session will use the original vocabulary list to create a new "in progress" list. 
 
 The app utilized macOS speech functionality so every word can be pronounced for the user. 
 
-Future TODO:
+Future TODOs:
 
 1. Since the data was scraped from an HTML webpage, there are pronunciation aides demarcated with forward slashes "/" that no longer serve their purpose and need to be removed. 
 2. Need to improve the alignment of words in the text box. 
